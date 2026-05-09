@@ -1,0 +1,76 @@
+        :root {
+            --bg-cream: #EFE3D2;
+            --dark-brown: #2D1B14;
+            --accent-orange: #D99C63;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-cream);
+            color: var(--dark-brown);
+        }
+
+        /* --- Header [cite: 1, 2, 3, 4, 5] --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: var(--bg-cream);
+        }
+
+        .logo { font-size: 50px; font-weight: bold; font-family: 'Playfair Display', serif; }
+        
+        nav ul { display: flex; list-style: none; gap: 150px; }
+        nav a { text-decoration: none; color: var(--dark-brown); font-weight: 500; font-size: 20px; position: fixed; }
+      
+        html{scroll-behavior: smooth;}
+        
+        /* --- Hero Section [cite: 6, 7, 8, 9] --- */
+        .hero {
+            height: 85vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/Banner.jpeg) center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 10%;
+            color: var(--white);
+        }
+
+        .hero-content { max-width: 550px; text-align: left; }
+        .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 4rem; line-height: 1.1; margin-bottom: 20px; }
+        .hero-content p { font-size: 16px; margin-bottom: 30px; line-height: 1.6; }
+        
+        .btn-group { display: flex; gap: 15px; }
+        .btn { padding: 12px 35px; border-radius: 25px; border: none; cursor: pointer; font-weight: 600; transition: 0.3s; }
+        .btn-white { background: var(--white); color: var(--dark-brown); }
+        .btn-orange { background: var(--accent-orange); color: var(--white); }
+
+        /* --- Featurress Section [cite: 10-17] --- */
+        .features { padding: 80px 10%; text-align: center; background: #F2EBE1; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 40px; margin-bottom: 60px; }
+        
+        .feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .feature-item i { font-size: 40px; color: var(--accent-orange); margin-bottom: 20px; }
+        .feature-item h3 { margin-bottom: 10px; font-size: 22px; }
+        .feature-item p { font-size: 14px; color: #666; }
+
+        /* --- Process Section [cite: 18-22] --- */
+        .process { padding: 200px 10%; display: flex; align-items: center; gap: 70px; background: #E3D1BB }
+        .process-info <h2>{font-size: 18px;  flex: 1; }
+        .process-cards { flex: 2; display: flex; gap: 30px; }
+        
+        .card { flex: 1; padding: 70px 20px; gap: 70px;  border-radius: 15px; text-align: center; color: var(--white); }
+        .card-dark { background: var(--dark-brown); }
+        .card-light { background: var(--accent-orange); }
+        .process-cards i{font-size: 20px; margin-bottom: 20px; }
+
+
+    
